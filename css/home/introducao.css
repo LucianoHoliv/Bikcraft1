@@ -23,3 +23,31 @@
    color: var(--cor-5);
    margin-bottom: 20px;
 }
+
+.introducao img {
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+}
+
+@media  (max-width: 800px) {
+    .introducao-bg {
+        background: var(--cor-11);
+        box-shadow: inset 0 -60px var(--cor-0);
+        padding-top: 40px;
+    }
+
+    .introducao {
+        grid-template-columns: 1fr;
+        gap: 32px;
+    }
+
+    .introducao img {
+        height: 300px;
+        width: 100%;
+    }
+
+    .introducao-texto {
+        padding-bottom: 0;
+    }
+}

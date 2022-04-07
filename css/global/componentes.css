@@ -8,6 +8,10 @@
     max-width: max-content;
 }
 
+.btn:hover {
+    background: linear-gradient(#ffb60d, #e59317);
+}
+
 .detalhe {
     color: var(--cor-p1);
 }
