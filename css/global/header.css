@@ -7,7 +7,7 @@
     flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
-    padding: 30px 20px;
+    padding: 15px 20px;
 }
 
 .header-container img {
@@ -28,6 +28,20 @@
     display: block;
     color: var(--cor-0);
     padding: 1rem 0;
+    margin: 4px 0;
+}
+
+.header-nav a::after {
+    content: "";
+    display: block;
+    width: 0;
+    height: 2px;
+    background: var(--cor-0);
+    transition: .2s ease;
+}
+
+.header-nav a:hover::after {
+    width: 100%;
 }
 
 @media (max-width: 800px) {
@@ -43,6 +57,10 @@
         padding: .75rem 1rem;
         background: var(--cor-11);
         border-radius: 4px;
+    }
+
+    .header-nav a:hover::after {
+        display: none;
     }
 }
 
