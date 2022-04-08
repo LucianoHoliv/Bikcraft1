@@ -28,28 +28,81 @@
   text-transform: uppercase;
   color: var(--cor-p1);
   border-bottom: 4px solid var(--cor-p1);
+  transition: 0.2s ease-in-out;
+}
+
+.tecnologia-link:hover {
+  color: var(--cor-0);
+  border-bottom: 4px solid var(--cor-0);
 }
 
 .tecnologia-texto-box {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 40px;
-  padding-top: 80px;
+  padding-top: 120px;
 }
 
-.motor-eletrico h3 {
+.motor-eletrico {
   position: relative;
 }
 
 .motor-eletrico h3::before {
-  contain: "";
-  display: inline-block;
-  background: url("../../img/icones/eletrica.svg");
+  content: "";
+  width: 25px;
+  height: 25px;
+  background-image: url(../../img/icones/eletrica.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
   position: absolute;
+  top: -35px;
+}
+
+.rastreador {
+  position: relative;
+}
+
+.rastreador h3::before {
+  content: "";
+  width: 25px;
+  height: 25px;
+  background-image: url(../../img/icones/rastreador.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: absolute;
+  top: -35px;
+}
+
+.tecnologia-texto-box h3 {
+  padding-bottom: 8px;
 }
 
 .tecnologia img {
   object-fit: cover;
   height: 100%;
   width: 100%;
+}
+
+@media (max-width: 800px) {
+    .tecnologia-bg {
+        box-shadow: none;
+      }
+
+  .tecnologia {
+    grid-template-columns: 1fr;
+  }
+
+  .tecnologia-texto {
+    padding: 60px 0;
+  }
+
+  .tecnologia img {
+    display: none;
+  }
+}
+
+@media (max-width: 600px) {
+  .tecnologia-texto-box {
+    grid-template-columns: 1fr;
+  }
 }

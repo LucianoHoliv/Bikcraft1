@@ -1,0 +1,15 @@
+.parceiros {
+    padding: 60px 0 120px;
+}
+
+.parceiros-lista {
+  display: grid;
+  grid-template-columns: repeat(4,1fr);
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+.parceiros-item {
+  border: 1px solid gray;
+  margin: 0 auto;
+}
