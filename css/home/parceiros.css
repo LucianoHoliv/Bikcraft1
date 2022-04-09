@@ -1,15 +1,40 @@
 .parceiros {
-    padding: 60px 0 120px;
+  padding: 60px 0 120px;
+}
+
+.parceiros-titulo {
+  padding-bottom: 60px;
 }
 
 .parceiros-lista {
   display: grid;
-  grid-template-columns: repeat(4,1fr);
+  grid-template-columns: repeat(4, 1fr);
   max-width: 1400px;
   margin: 0 auto;
 }
 
 .parceiros-item {
-  border: 1px solid gray;
-  margin: 0 auto;
+  display: flex;
+  padding: 32px;
+  width: 100%;
+  border: 1px solid var(--cor-2);
+  justify-content: center;
+}
+
+.parceiros-lista li:nth-child(-n+4) {
+  border-top: none;
+}
+
+.parceiros-lista li:nth-child(1),
+.parceiros-lista li:nth-child(5) {
+  border-left: none;
+}
+
+.parceiros-lista li:nth-child(4),
+.parceiros-lista li:nth-child(8){
+  border-right: none;
+}
+
+.parceiros-lista li:nth-child(n+5):nth-child(-n+8) {
+  border-bottom: none;
 }

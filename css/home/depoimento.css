@@ -1,0 +1,16 @@
+.depoimento {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  height: 520px;
+  overflow: hidden;
+  background: var(--cor-p1);
+}
+
+.depoimento-texto p {
+    font-family: 'Merriweather', serif;
+    font-style: italic;
+    font-size: 1.8rem;
+    font-weight: 700;
+    max-width: 32ch;
+    padding: 160px 0 0 80px;
+}
