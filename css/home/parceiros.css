@@ -21,7 +21,11 @@
   justify-content: center;
 }
 
-.parceiros-lista li:nth-child(-n+4) {
+.parceiros-item img {
+  object-fit: contain;
+}
+
+.parceiros-lista li:nth-child(-n + 4) {
   border-top: none;
 }
 
@@ -31,10 +35,20 @@
 }
 
 .parceiros-lista li:nth-child(4),
-.parceiros-lista li:nth-child(8){
+.parceiros-lista li:nth-child(8) {
   border-right: none;
 }
 
-.parceiros-lista li:nth-child(n+5):nth-child(-n+8) {
+.parceiros-lista li:nth-child(n + 5):nth-child(-n + 8) {
   border-bottom: none;
+}
+
+@media (max-width: 800px) {
+  .parceiros-lista {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .parceiros {
+    padding: 60px 0 40px;
+  }
 }
