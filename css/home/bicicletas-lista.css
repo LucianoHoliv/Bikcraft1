@@ -19,6 +19,11 @@
   min-width: 280px;
 }
 
+.bicicleta-item a {
+  display: block;
+  color: var(--cor-12);
+}
+
 .bicicleta-item h2 {
   padding: 1rem 0 0.625rem 1.3rem;
   position: relative;
@@ -37,11 +42,11 @@
   transition: 0.2s ease;
 }
 
-.bicicleta-item h2:hover::before {
+.bicicleta-item a:hover h2::before {
   width: 25px;
 }
 
-.bicicleta-item h2:hover {
+.bicicleta-item a:hover h2 {
   padding-left: 1.925rem;
 }
 
