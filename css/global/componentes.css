@@ -1,17 +1,32 @@
 .btn {
-    display: block;
-    background: linear-gradient(#ffbf00, #f2a50c);
-    color: var(--cor-p5);
-    text-transform: uppercase;
-    border-radius: 4px;
-    padding: 1rem 2rem;
-    max-width: max-content;
+  display: block;
+  background: linear-gradient(#ffbf00, #f2a50c);
+  color: var(--cor-p5);
+  text-transform: uppercase;
+  border-radius: 4px;
+  padding: 1rem 2rem;
+  max-width: max-content;
 }
 
 .btn:hover {
-    background: linear-gradient(#ffb60d, #e59317);
+  background: linear-gradient(#ffb60d, #e59317);
+}
+
+.btn-secundary {
+  display: block;
+  background: var(--cor-9);
+  color: var(--cor-1);
+  text-transform: uppercase;
+  border-radius: 4px;
+  padding: 1rem 2rem;
+  max-width: max-content;
+  height: max-content;
+}
+
+.btn-secundary:hover {
+  background: var(--cor-8);
 }
 
 .detalhe {
-    color: var(--cor-p1);
+  color: var(--cor-p1);
 }
