@@ -1,23 +1,22 @@
 .depoimento {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  height: 520px;
   overflow: hidden;
   background: var(--cor-p1);
 }
 
 .depoimento img {
+  display: block;
   height: 100%;
   width: 100%;
-  display: block;
   object-fit: cover;
   border-radius: 0;
 }
 
 .depoimento-texto {
-  display: block;
-  padding: 0 80px 40px;
-  margin: auto 0;
+  display: grid;
+  padding: 80px 80px;
+  align-items: end;
 }
 
 #depoimento-texto {
@@ -47,6 +46,12 @@
 
 .depoimento-texto p::after {
   content: "”";
+}
+
+@media (min-width: 1200px) {
+  .depoimento img {
+    max-height: 520px;
+  }
 }
 
 @media (max-width: 800px) {

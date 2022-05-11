@@ -1,0 +1,13 @@
+.bicicletas-bg {
+  background-color: var(--cor-11);
+  padding: 60px 0;
+}
+
+.bicicletas-title h1 {
+    color: #fff;
+}
+
+.bicicletas-title h2 {
+    text-transform: uppercase;
+    color: var(--cor-5);
+}

@@ -6,27 +6,44 @@
   border-radius: 4px;
   padding: 1rem 2rem;
   max-width: max-content;
+  font-weight: bolder;
+  height: max-content;
 }
 
 .btn:hover {
   background: linear-gradient(#ffb60d, #e59317);
 }
 
-.btn-secundary {
-  display: block;
-  background: var(--cor-9);
-  color: var(--cor-1);
+.detalhe {
+  color: var(--cor-p1);
+}
+
+.btn-secundario {
+  display: inline-block;
+  background: var(--cor-10);
+  color: var(--cor-0);
   text-transform: uppercase;
   border-radius: 4px;
   padding: 1rem 2rem;
   max-width: max-content;
   height: max-content;
+  font-weight: bolder;
 }
 
-.btn-secundary:hover {
-  background: var(--cor-8);
+.btn-secundario:hover {
+  background: var(--cor-9);
 }
 
-.detalhe {
-  color: var(--cor-p1);
+.btn-seta {
+  display: block;
+  background: linear-gradient(#ffbf00, #f2a50c);
+  color: var(--cor-p5);
+  text-transform: uppercase;
+  border-radius: 4px;
+  padding: 1.2rem 2.5rem;
+  max-width: max-content;
+  font-weight: bolder;
+  height: max-content;
 }
+
+

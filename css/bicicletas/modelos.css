@@ -1,0 +1,34 @@
+.bicicleta-tipo {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+  padding: 60px;
+}
+
+.bicicleta-descricao {
+  display: grid;
+  gap: 20px;
+}
+
+.bicicleta-diferencial {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.bicicleta-diferencial ul {
+  display: grid;
+  gap: 10px;
+}
+
+.bicicleta-diferencial li {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: 10px;
+}
+
+.bicicleta-descricao a {
+    justify-self: end;
+    align-self: end;
+  }
+
+  
