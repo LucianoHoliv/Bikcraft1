@@ -1,19 +1,38 @@
-.vantagens, .perguntas {
-    padding-top: 120px;
+.vantagens,
+.perguntas {
+  padding-top: 120px;
 }
 
 .vantagens-bg {
-    background: var(--cor-12);
+  background: var(--cor-12);
 }
 
 .vantagens ul {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    padding: 60px 0 120px;
-    gap: 40px 80px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  padding: 60px 0 120px;
+  gap: 40px 80px;
 }
 
-.vantagens ul li{
-    display: grid;
-    gap: 8px;
+.vantagens ul li {
+  display: grid;
+  gap: 8px;
+}
+
+@media (max-width: 800px) {
+  .vantagens ul {
+    grid-template-columns: repeat(2, 1fr);
+    padding: 60px 0;
+  }
+
+  .vantagens,
+.perguntas {
+  padding-top: 60px;
+}
+}
+
+@media (max-width: 600px) {
+  .vantagens ul {
+    grid-template-columns: 1fr;
+  }
 }

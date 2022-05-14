@@ -43,3 +43,14 @@
   padding-top: 20px;
   max-width: 720px;
 }
+
+@media (max-width: 600px) {
+    .perguntas-lista {
+        padding: 30px;
+      }
+
+      .perguntas-lista dt::after {
+        right: -18px;
+    top: -4px;
+      }
+  }
