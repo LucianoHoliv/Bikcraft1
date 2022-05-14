@@ -1,5 +1,8 @@
 .bicicletas-bg {
   background-color: var(--cor-11);
+}
+
+.bicicletas-title {
   padding: 60px 0;
 }
 

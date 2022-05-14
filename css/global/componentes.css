@@ -8,9 +8,12 @@
   max-width: max-content;
   font-weight: bolder;
   height: max-content;
+  cursor: pointer;
+  white-space: nowrap;
 }
 
-.btn:hover {
+.btn:hover,
+.seta:hover {
   background: linear-gradient(#ffb60d, #e59317);
 }
 
@@ -18,32 +21,42 @@
   color: var(--cor-p1);
 }
 
-.btn-secundario {
+.secundario {
   display: inline-block;
   background: var(--cor-10);
   color: var(--cor-0);
-  text-transform: uppercase;
-  border-radius: 4px;
-  padding: 1rem 2rem;
-  max-width: max-content;
-  height: max-content;
-  font-weight: bolder;
 }
 
-.btn-secundario:hover {
+.secundario:hover {
   background: var(--cor-9);
 }
 
-.btn-seta {
-  display: block;
-  background: linear-gradient(#ffbf00, #f2a50c);
-  color: var(--cor-p5);
-  text-transform: uppercase;
-  border-radius: 4px;
-  padding: 1.2rem 2.5rem;
-  max-width: max-content;
-  font-weight: bolder;
-  height: max-content;
+.seta {
+  position: relative;
+  padding: 1.2rem 4rem 1.2rem 2.5rem;
 }
 
+.seta::after {
+  position: absolute;
+  content: url(../../img/icones/seta.svg);
+  right: 30px;
+  transition: 0.2s ease-in;
+}
 
+.seta:hover::after {
+  right: 25px;
+}
+
+@media (max-width: 600px) {
+  .btn {
+    padding: 0.9rem 1.4rem;
+  }
+
+  .seta {
+    padding: 0.9rem 3.2rem 0.9rem 1.8rem;
+  }
+
+  .seta::after {
+    right: 25px;
+  }
+}
