@@ -1,0 +1,19 @@
+.vantagens, .perguntas {
+    padding-top: 120px;
+}
+
+.vantagens-bg {
+    background: var(--cor-12);
+}
+
+.vantagens ul {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    padding: 60px 0 120px;
+    gap: 40px 80px;
+}
+
+.vantagens ul li{
+    display: grid;
+    gap: 8px;
+}
