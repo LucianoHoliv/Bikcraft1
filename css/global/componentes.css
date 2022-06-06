@@ -1,3 +1,15 @@
+.bg-0 {
+  background: var(--cor-0);
+}
+
+.bg-11 {
+  background: var(--cor-11);
+}
+
+.bg-12 {
+  background: var(--cor-12);
+}
+
 .btn {
   display: block;
   background: linear-gradient(#ffbf00, #f2a50c);
