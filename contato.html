@@ -38,12 +38,16 @@
                 <div class="contatos-form bg-12">
                     <h3>Loja online</h3>
 
-                    <p>Rua Ali Perto, 35</p>
-                    <p>Rio de Janeiro - RJ</p>
-                    <p>Brasil - Terra - Vita Láctea</p>
+                    <div class="contato-endereco">
+                        <p>Rua Ali Perto, 35</p>
+                        <p>Rio de Janeiro - RJ</p>
+                        <p>Brasil - Terra - Vita Láctea</p>
+                    </div>
 
-                    <a href="mailto:contato@bikcraft.com">contato@bikcraft.com</a>
-                    <a href="mailto:assistencia@bikcraft.com">assistencia@bikcraft.com</a>
+                    <div class="contato-email">
+                        <a href="mailto:contato@bikcraft.com">contato@bikcraft.com</a>
+                        <a href="mailto:assistencia@bikcraft.com">assistencia@bikcraft.com</a>
+                    </div>
 
                     <a href="tel:+552199999999">+55 21 9999-9999</a>
 
@@ -66,10 +70,30 @@
                     </ul>
                 </div>
                 <form action="" class="form bg-0">
-                    <input type="text">
-                    <input type="tel">
-                    <input type="email" name="" id="" class="email-form">
-                    <textarea name="" id="" cols="30" rows="10" class="text-form"></textarea>
+                    <div>
+                        <label for="name" class="font-1-s">Nome</label><br>
+                        <input type="text" id="name" placeholder="Seu nome" class="font-2-s">
+                    </div>
+
+                    <div>
+                        <label for="telefone" class="font-1-s">telefone</label><br>
+                        <input type="tel" id="telefone" placeholder="(21) 9999-9999" class="font-2-s">
+                    </div>
+
+                    <div class="email-form">
+                        <label for="email" class="font-1-s">E-mail</label><br>
+                        <input type="email" name="" id="email" placeholder="contato@email.com" class="font-2-s">
+                    </div>
+
+                    <div class="text-form">
+                        <label for="mensagem" class="font-1-s">Mensagem</label><br>
+                        <textarea name="" id="mensagem" cols="30" rows="10" placeholder="O que você precisa?"
+                            class="font-2-s"></textarea>
+                    </div>
+
+                    <a class="btn font-1-m-b">
+                        Enviar Mensagem
+                    </a>
                 </form>
             </div>
         </div>
