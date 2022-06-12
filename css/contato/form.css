@@ -1,6 +1,6 @@
 .contatos {
   display: grid;
-  grid-template-columns: 483px auto;
+  grid-template-columns: 40% 60%;
   padding: 60px 0;
 }
 
@@ -15,11 +15,58 @@
   display: grid;
   padding: 60px;
   color: var(--cor-3);
+  height: 560px;
+}
+
+.contato-form {
+  background-image: linear-gradient(to top, var(--cor-2) 48%, var(--cor-11) 0%);
+}
+
+.contato {
+  padding: 60px 20px;
+}
+
+.contato h2 {
+  text-transform: uppercase;
+}
+
+.contato-email,
+.contato-endereco,
+.contato-tel {
+  display: grid;
+  grid-template-columns: 15px auto;
+  grid-template-rows: repeat(3, max-content);
+  gap: 10px;
+}
+
+.contato-endereco p,
+.contato-email a,
+.contato-tel a {
+  grid-column: 2;
+}
+
+.contato-endereco::before {
+  content: url(../../img/icones/local.svg);
+  grid-column: 1;
+}
+
+.contato-email::before {
+  content: url(../../img/icones/email.svg);
+  grid-column: 1;
+}
+
+.contato-tel::before {
+  content: url(../../img/icones/telefone.svg);
+  grid-column: 1;
 }
 
 .email-form,
 .text-form {
   grid-column: 1 / -1;
+}
+
+.form .btn {
+  grid-column: 1/-1;
 }
 
 input,
@@ -46,4 +93,33 @@ textarea:focus {
 
 textarea {
   height: 145px;
+  min-height: 100px;
+  max-width: 100%;
+  min-width: 40%;
+}
+
+@media (max-width: 800px) {
+  .contatos {
+    grid-template-columns: 1fr;
+    padding: 20px 0;
+  }
+
+  .form {
+    gap: 20px;
+    padding: 20px 40px;
+  }
+}
+
+@media (max-width: 600px) {
+  .form {
+    grid-template-columns: 1fr;
+    gap: 20px;
+    padding: 20px;
+  }
+
+  textarea {
+    height: 145px;
+    min-height: 100px;
+    min-width: 100px;
+  }
 }
