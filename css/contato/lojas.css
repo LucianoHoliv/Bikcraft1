@@ -1,0 +1,56 @@
+.locais {
+  background: var(--cor-2);
+}
+
+.locais-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+  padding: 60px 0 120px;
+}
+
+.lojas-mapa {
+  background: var(--cor-0);
+}
+
+.lojas-enderecos {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 30px;
+  padding: 32px;
+}
+
+.lojas-mapa img,
+.lojas-enderecos h3 {
+  grid-column: 1 / -1;
+  border-radius: 0;
+}
+
+.lojas-contato {
+  position: relative;
+  display: grid;
+  gap: 10px;
+  padding-left: 10px;
+}
+
+.lojas-contato::before {
+  position: absolute;
+  content: "";
+  width: 2px;
+  height: 56px;
+  background: var(--cor-2);
+}
+
+.lojas-horario {
+  position: relative;
+  display: flex;
+  align-items: center;
+  padding-left: 25px;
+}
+
+.lojas-horario::before {
+  position: absolute;
+  content: url(../../img/icones/horario.svg);
+  left: -1px;
+  top: 2px;
+}
