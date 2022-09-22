@@ -60,8 +60,7 @@
   grid-column: 1;
 }
 
-.email-form,
-.text-form {
+.max-form {
   grid-column: 1 / -1;
 }
 
