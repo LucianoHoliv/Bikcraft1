@@ -22,6 +22,7 @@
 
 .bicicleta-item img {
   min-width: 280px;
+  height: fit-content;
 }
 
 .bicicleta-item a {
@@ -67,6 +68,10 @@
 }
 
 @media (max-width: 980px) {
+  .bicicleta-item:hover{
+    scale: initial;
+  }
+
   .bicicletas-lista ul {
     scroll-behavior: auto;
     padding-bottom: 20px;

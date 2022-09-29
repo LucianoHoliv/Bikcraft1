@@ -23,6 +23,10 @@
   align-content: start;
 }
 
+.bicicleta-lista img {
+  height: fit-content;
+}
+
 .bicicleta-lista li:first-child {
   grid-column: 1 / -1;
 }

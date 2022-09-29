@@ -22,6 +22,7 @@
   height: max-content;
   cursor: pointer;
   white-space: nowrap;
+  border: none;
 }
 
 .btn:hover,

@@ -60,7 +60,7 @@
   grid-column: 1;
 }
 
-.max-form {
+.col-2 {
   grid-column: 1 / -1;
 }
 
