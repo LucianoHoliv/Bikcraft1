@@ -6,21 +6,20 @@
 .bicicleta-selecionada h1 {
   margin: 4px 0 60px;
 }
-.bicicleta-principal,
-.bicicleta-lista {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-}
 
 .bicicleta-principal {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
   gap: 0 40px;
 }
 
 .bicicleta-lista {
-  grid-column: 1;
-  grid-row: 1 / 7;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
   gap: 20px 20px;
   align-content: start;
+  grid-column: 1;
+  grid-row: 1;
 }
 
 .bicicleta-lista img {
@@ -29,6 +28,10 @@
 
 .bicicleta-lista li:first-child {
   grid-column: 1 / -1;
+}
+
+.bicicleta-infos {
+  grid-column: 2;
 }
 
 .box-btn {
@@ -122,5 +125,86 @@
 
 .seguro-conteudo p{
   margin-bottom: 20px;
+}
+
+
+/* RESPONSIVIDADE */
+@media(max-width: 900px){
+  .bicicleta-lista {
+    grid-template-columns: 1fr;
+  }
+
+  .bicicleta-principal {
+    grid-template-columns: 1fr 2fr;
+    gap: 0 30px;
+  }
+}
+
+@media(max-width: 700px){
+  .bicicleta-principal {
+    display: block;
+  }
+
+  .bicicleta-lista {
+    grid-template-columns: 1fr 1fr;
+    margin-top: 20px;
+  }
+
+  .bicicleta-selecionada {
+    padding: 30px 20px 60px;
+  }
+  
+  .bicicleta-selecionada h1 {
+    margin: 4px 0 20px;
+  }
+
+  .box-btn,
+.descricao-bicicleta {
+  margin-bottom: 30px;
+}
+
+.seguro-bg {
+  box-shadow: none;
+}
+
+.bicicleta-seguro {
+  grid-template-columns: 1fr;
+  gap: 10px;
+}
+
+.seguro-bicicleta img{
+  display: none;
+}
+
+.seguro-conteudo {
+  margin: 20px 0;
+}
+
+}
+
+@media(max-width: 500px){
+ .bicicleta-lista {
+    grid-template-columns: 1fr;
+  }
+
+  .box-btn {
+    flex-direction: column;
+  }
+
+  .box-btn p {
+    margin-left: 0; 
+  }
+
+  .box-btn p:first-child {
+    margin: 8px 0 2px 0;
+  }
+
+  .info-bicicleta {
+    grid-template-columns: 1fr;
+  }
+
+  .seguro-conteudo h1{
+    margin-bottom: 20px;
+  }
 }
 

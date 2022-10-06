@@ -9,20 +9,26 @@
     <title>Bikcraft | Luciano</title>
     <meta name="description"
         content="Bicicletas elétricas de alta precisão e qualidade, feitas sob medida para o cliente. Explore o mundo na sua velocidade com a Bikcraft.">
+    
+    <link rel="shortcut icon" href="img/icones/favicon.ico" type="image/x-icon">
+    <link rel="preload" href="css/style.min.css" as="style">
+    <link rel="stylesheet" href="css/style.min.css">
 
-    <link rel="preload" href="css/style.css" as="style">
-    <link rel="stylesheet" href="css/style.css">
+    <script>
+        document.documentElement.classList.add('js');
+    </script>
 </head>
 
 <body>
     <header class="header-bg">
         <div class="header-container container">
-            <a href="./"><img src="img/bikcraft.svg" width="136" height="32" alt="Bikcraft"></a>
+            <a href="./" data-anime="100" class="fadeInDown"><img src="img/bikcraft.svg" width="136" height="32"
+                    alt="Bikcraft"></a>
             <nav aria-label="primaria">
                 <ul class="header-nav font-1-m">
-                    <li><a href="/bicicletas.html">Bicicletas</a></li>
-                    <li><a href="/seguros.html">Seguros</a></li>
-                    <li><a href="./contato.html">Contato</a></li>
+                    <li data-anime="300" class="fadeInDown"><a href="/bicicletas.html">Bicicletas</a></li>
+                    <li data-anime="500" class="fadeInDown"><a href="/seguros.html">Seguros</a></li>
+                    <li data-anime="700" class="fadeInDown"><a href="./contato.html">Contato</a></li>
                 </ul>
             </nav>
         </div>
@@ -31,16 +37,19 @@
     <main class="introducao-bg">
         <div class="container introducao">
             <div class="introducao-texto">
-                <h1 class="font-1-xxl">Bicicletas feitas sob medida<span class="detalhe">.</span></h1>
-                <p class="font-2-l">
+                <h1 class="font-1-xxl fadeInDown" data-anime="100">Bicicletas feitas sob medida<span
+                        class="detalhe">.</span></h1>
+                <p class="font-2-l fadeInDown" data-anime="500">
                     Bicicletas elétricas de alta precisão e qualidade, feitas sob medida para você. Explore o mundo na
                     sua velocidade com a Bikcraft.
                 </p>
 
-                <a class="btn font-1-m-b" href="./bicicletas.html">Escolha a sua</a>
+                <a data-anime="700" class="btn font-1-m-b" href="./bicicletas.html">Escolha a sua</a>
             </div>
             <picture>
-                <img src="img/fotos/introducao.jpg" width="1280" height="1600" alt="Bicicleta preta">
+                <source media="(max-width: 800px)" srcset="./img/bicicletas/nimbus.jpg">
+                <img data-anime="700" class="fadeInRight" src="img/fotos/introducao.jpg" width="1280" height="1600"
+                    alt="Bicicleta preta">
             </picture>
         </div>
     </main>
@@ -51,7 +60,7 @@
         </h1>
         <ul>
             <li class="bicicleta-item">
-                <a href="#">
+                <a href="./bicicletas/magic_might.html">
                     <img src="img/bicicletas/magic-home.jpg" width="920" height="1040"
                         alt="Bicicleta preta Magic Might">
                     <h2 class="font-1-xl">Magic Might</h2>
@@ -59,7 +68,7 @@
                 </a>
             </li>
             <li class="bicicleta-item">
-                <a href="#">
+                <a href="./bicicletas/nimbus.html">
                     <img src="img/bicicletas/nimbus-home.jpg" width="920" height="1040"
                         alt="Bicicleta preta Nimbus Stark">
                     <h2 class="font-1-xl">Nimbus Stark</h2>
@@ -67,7 +76,7 @@
                 </a>
             </li>
             <li class="bicicleta-item">
-                <a href="#">
+                <a href="./bicicletas/nebula_cosmic.html">
                     <img src="img/bicicletas/nebula-home.jpg" width="920" height="1040"
                         alt="Bicicleta Branca Nebula Cosmic">
                     <h2 class="font-1-xl">Nebula Cosmic</h2>
@@ -173,7 +182,7 @@
                     <li>Suporte 08h às 18h</li>
                     <li>Cobertura estadual</li>
                 </ul>
-                <a href="#" class="btn secundario">Inscreva-se
+                <a href="./orcamento.html?tipo=seguro&value=prata" class="btn secundario">Inscreva-se
                 </a>
             </div>
             <div class="seguro-plano">
@@ -189,7 +198,7 @@
                     <li>Desconto em parceiros</li>
                     <li>Acesso ao Clube Bikcraft</li>
                 </ul>
-                <a href="#" class="btn font-1-m-b ">Inscreva-se</a>
+                <a href="./orcamento.html?tipo=seguro&value=ouro" class="btn font-1-m-b ">Inscreva-se</a>
             </div>
         </div>
     </section>
@@ -218,9 +227,9 @@
             <div class="footer-lista">
                 <h2 class="font-2-l-b">Informações</h2>
                 <ul class="font-2-m">
-                    <li><a href="./bicicletas.html">Bicicletas</a></li>
-                    <li><a href="./seguros.html">Seguros</a></li>
-                    <li><a href="./contato.html">Contato</a></li>
+                    <li data-anime="300" class="fadeInDown"><a href="./bicicletas.html">Bicicletas</a></li>
+                    <li data-anime="500" class="fadeInDown"><a href="./seguros.html">Seguros</a></li>
+                    <li data-anime="700" class="fadeInDown"><a href="./contato.html">Contato</a></li>
                     <li><a href="./">Termos e condições</a></li>
                 </ul>
             </div>
@@ -228,7 +237,8 @@
         </div>
     </footer>
 
-    <script src="script.js"></script>
+    <script src="js/plugin/simple-anime.js"></script>
+    <script src="js/script.js"></script>
 </body>
 
 </html>
