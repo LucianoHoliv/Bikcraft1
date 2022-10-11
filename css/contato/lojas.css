@@ -49,6 +49,7 @@ height: fit-content;
   display: flex;
   align-items: center;
   padding-left: 25px;
+  grid-column: 1 / -1;
 }
 
 .lojas-horario::before {
@@ -56,4 +57,20 @@ height: fit-content;
   content: url(../../img/icones/horario.svg);
   left: -1px;
   top: 2px;
+}
+
+@media (max-width: 900px){
+  .locais-container {
+    grid-template-columns: 1fr;
+    gap: 30px;
+    padding: 30px 0 60px;
+  }
+}
+
+@media (max-width: 500px){
+  .lojas-enderecos {
+    grid-template-columns: 1fr;
+    gap: 20px;
+    padding: 32px;
+  }
 }

@@ -122,3 +122,11 @@ textarea {
     min-width: 100px;
   }
 }
+
+@media(max-width: 400px){
+.contatos-form {
+  padding: 35px;
+  color: var(--cor-3);
+  height: 560px;
+}
+}
